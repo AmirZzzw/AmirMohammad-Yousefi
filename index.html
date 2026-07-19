@@ -64,8 +64,8 @@
   ::selection{background:var(--accent-soft);color:var(--accent);}
 
   .wrap{max-width:980px;margin:0 auto;padding:0 22px;}
-  .section{padding:64px 0;}
-  .section-head{display:flex;align-items:baseline;gap:14px;margin-bottom:28px;}
+  .section{padding:48px 0;}
+  .section-head{display:flex;align-items:baseline;gap:14px;margin-bottom:24px;}
   .section-tag{
     font-family:var(--mono);
     direction:ltr;
@@ -85,46 +85,46 @@
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;}
   .reveal.in{opacity:1;transform:translateY(0);}
 
-  /* ===== HERO ===== */
-  .hero{position:relative;padding:70px 0 40px;overflow:hidden;border-bottom:1px solid var(--border-soft);}
+  /* ===== HERO (کمی فشرده‌تر) ===== */
+  .hero{position:relative;padding:50px 0 30px;overflow:hidden;border-bottom:1px solid var(--border-soft);}
   .hero-grid{
     display:grid;
     grid-template-columns:1.05fr .95fr;
-    gap:40px;
+    gap:32px;
     align-items:center;
   }
-  .id-card{display:flex;flex-direction:column;gap:16px;}
-  .avatar-row{display:flex;align-items:center;gap:16px;}
+  .id-card{display:flex;flex-direction:column;gap:12px;}
+  .avatar-row{display:flex;align-items:center;gap:14px;}
   .avatar{
-    width:128px;height:128px;border-radius:32px;object-fit:cover;
+    width:110px;height:110px;border-radius:28px;object-fit:cover;
     border:1px solid var(--border);
     box-shadow:0 10px 30px rgba(0,0,0,.5);
   }
   .status-pill{
     display:inline-flex;align-items:center;gap:7px;
-    font-family:var(--mono);direction:ltr;font-size:.72rem;color:var(--online);
+    font-family:var(--mono);direction:ltr;font-size:.7rem;color:var(--online);
   }
   .status-dot{width:7px;height:7px;border-radius:50%;background:var(--online);box-shadow:0 0 0 4px rgba(52,211,153,.15);animation:pulse 2.2s infinite;}
   @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
 
-  .id-card h1{font-size:2.3rem;font-weight:800;color:#fff;margin:0;letter-spacing:-.02em;}
-  .id-card .role{color:var(--muted);font-size:1.05rem;margin-top:2px;}
-  .id-card .lede{color:#c3ccdf;font-size:.98rem;max-width:34rem;margin-top:6px;}
+  .id-card h1{font-size:2.1rem;font-weight:800;color:#fff;margin:0;letter-spacing:-.02em;}
+  .id-card .role{color:var(--muted);font-size:1rem;margin-top:2px;}
+  .id-card .lede{color:#c3ccdf;font-size:.95rem;max-width:34rem;margin-top:4px;}
 
-  .meta-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px;font-family:var(--mono);direction:ltr;}
+  .meta-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:4px;font-family:var(--mono);direction:ltr;}
   .meta-row span{
-    font-size:.78rem;color:var(--muted);
+    font-size:.76rem;color:var(--muted);
     border:1px solid var(--border-soft);
     padding:4px 10px;border-radius:999px;
     display:inline-flex;align-items:center;gap:6px;
   }
   .meta-row i{color:var(--accent);}
 
-  .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;}
+  .btn-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
   .btn{
     display:inline-flex;align-items:center;gap:8px;
-    padding:11px 22px;border-radius:12px;
-    font-family:var(--sans);font-size:.92rem;font-weight:600;
+    padding:10px 20px;border-radius:10px;
+    font-family:var(--sans);font-size:.9rem;font-weight:600;
     border:1px solid transparent;cursor:pointer;transition:.2s ease;
   }
   .btn-primary{background:var(--accent);color:#1a1305;}
@@ -132,103 +132,109 @@
   .btn-ghost{background:var(--surface);border-color:var(--border);color:var(--text);}
   .btn-ghost:hover{border-color:var(--accent-line);background:var(--surface-2);}
 
-  /* terminal signature */
+  /* terminal (کمی کوچک‌تر) */
   .terminal{
     background:var(--surface);
     border:1px solid var(--border);
     border-radius:var(--radius-lg);
-    box-shadow:0 30px 70px rgba(0,0,0,.55);
+    box-shadow:0 25px 60px rgba(0,0,0,.55);
     overflow:hidden;
   }
   .terminal-bar{
     display:flex;align-items:center;gap:8px;
-    padding:12px 16px;
+    padding:10px 14px;
     background:var(--surface-2);
     border-bottom:1px solid var(--border-soft);
   }
-  .dot{width:10px;height:10px;border-radius:50%;}
+  .dot{width:9px;height:9px;border-radius:50%;}
   .dot.r{background:#ef4444;} .dot.y{background:#f59e0b;} .dot.g{background:#22c55e;}
   .terminal-title{
-    font-family:var(--mono);font-size:.72rem;color:var(--muted-dim);
+    font-family:var(--mono);font-size:.7rem;color:var(--muted-dim);
     margin-inline-start:8px;direction:ltr;
   }
   .terminal-body{
-    padding:20px 18px;
+    padding:16px 16px;
     font-family:var(--mono);
-    font-size:.82rem;
+    font-size:.78rem;
     direction:ltr;
     text-align:left;
     color:#c3ccdf;
-    min-height:190px;
+    min-height:170px;
   }
-  .terminal-body .ln{margin-bottom:9px;opacity:0;animation:typeIn .4s ease forwards;}
+  .terminal-body .ln{margin-bottom:7px;opacity:0;animation:typeIn .4s ease forwards;}
   .terminal-body .prompt{color:var(--accent);}
   .terminal-body .ok{color:var(--online);}
   .terminal-body .cursor{
-    display:inline-block;width:7px;height:14px;background:var(--accent);
+    display:inline-block;width:6px;height:13px;background:var(--accent);
     vertical-align:middle;animation:blink 1s step-end infinite;
   }
   @keyframes typeIn{to{opacity:1;}}
   @keyframes blink{50%{opacity:0;}}
 
-  /* ===== ABOUT ===== */
-  .about-text{color:#c3ccdf;font-size:.98rem;max-width:56rem;}
+  /* ===== ABOUT + STACK (ادغام شده) ===== */
+  .about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:32px;
+  }
+  .about-text{color:#c3ccdf;font-size:.95rem;}
   .about-text strong{color:var(--accent);font-weight:600;}
 
-  /* ===== STACK / SKILLS as terminal chips ===== */
-  .stack-grid{display:flex;flex-wrap:wrap;gap:10px;}
+  .stack-grid{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;}
   .stack-chip{
-    font-family:var(--mono);direction:ltr;font-size:.82rem;
+    font-family:var(--mono);direction:ltr;font-size:.78rem;
     color:var(--text);
     background:var(--surface);
     border:1px solid var(--border);
-    padding:8px 14px;border-radius:9px;
+    padding:6px 12px;border-radius:8px;
     transition:.2s ease;
   }
-  .stack-chip .p{color:var(--accent);margin-inline-end:6px;}
+  .stack-chip .p{color:var(--accent);margin-inline-end:5px;}
   .stack-chip:hover{border-color:var(--accent-line);background:var(--surface-2);transform:translateY(-2px);}
 
-  /* ===== SERVICES ===== */
-  .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;}
+  /* ===== SERVICES (کارت‌های کوچک‌تر) ===== */
+  .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;}
   .card{
     background:var(--surface);
     border:1px solid var(--border-soft);
     border-radius:var(--radius-md);
-    padding:24px 20px;
+    padding:20px 18px;
     transition:.25s ease;
   }
-  .card:hover{border-color:var(--accent-line);transform:translateY(-4px);background:var(--surface-2);}
-  .card i{font-size:1.4rem;color:var(--accent);margin-bottom:12px;display:block;}
-  .card h4{margin:0 0 6px;font-size:1rem;font-weight:700;color:#f2f5fc;}
-  .card p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.75;}
+  .card:hover{border-color:var(--accent-line);transform:translateY(-3px);background:var(--surface-2);}
+  .card i{font-size:1.3rem;color:var(--accent);margin-bottom:10px;display:block;}
+  .card h4{margin:0 0 5px;font-size:.98rem;font-weight:700;color:#f2f5fc;}
+  .card p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.7;}
 
-  /* ===== CONTACT ===== */
-  .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+  /* ===== CONTACT (فشرده‌تر) ===== */
+  .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;}
   .contact-link{
-    display:flex;align-items:center;gap:12px;
+    display:flex;align-items:center;gap:10px;
     background:var(--surface);border:1px solid var(--border-soft);
-    padding:14px 16px;border-radius:var(--radius-md);
-    color:var(--text);font-size:.9rem;transition:.2s ease;
+    padding:12px 14px;border-radius:var(--radius-md);
+    color:var(--text);font-size:.85rem;transition:.2s ease;
   }
-  .contact-link i{font-size:1.1rem;color:var(--accent);width:20px;text-align:center;}
+  .contact-link i{font-size:1.05rem;color:var(--accent);width:18px;text-align:center;}
   .contact-link:hover{border-color:var(--accent-line);background:var(--surface-2);transform:translateY(-2px);}
-  .contact-link .sub{display:block;font-family:var(--mono);direction:ltr;font-size:.72rem;color:var(--muted-dim);margin-top:2px;}
+  .contact-link .sub{display:block;font-family:var(--mono);direction:ltr;font-size:.68rem;color:var(--muted-dim);margin-top:2px;}
 
-  /* ===== CTA ===== */
-  .cta{
+  /* ===== CTA (ادغام با فوتر) ===== */
+  .cta-footer{
     text-align:center;
-    background:linear-gradient(180deg,var(--surface),var(--bg-soft));
+    background:var(--surface);
     border:1px solid var(--border-soft);
     border-radius:var(--radius-lg);
-    padding:44px 28px;
+    padding:36px 28px;
+    margin-bottom:20px;
   }
-  .cta h3{font-size:1.5rem;color:#fff;margin:0 0 8px;font-weight:800;}
-  .cta p{color:var(--muted);max-width:30rem;margin:0 auto 22px;font-size:.95rem;}
+  .cta-footer h3{font-size:1.4rem;color:#fff;margin:0 0 6px;font-weight:800;}
+  .cta-footer p{color:var(--muted);max-width:28rem;margin:0 auto 18px;font-size:.9rem;}
 
-  .footer{text-align:center;padding:30px 0;color:var(--muted-dim);font-size:.8rem;border-top:1px solid var(--border-soft);}
+  .footer{text-align:center;padding:20px 0;color:var(--muted-dim);font-size:.75rem;border-top:1px solid var(--border-soft);}
 
   @media (max-width:760px){
     .hero-grid{grid-template-columns:1fr;}
+    .about-grid{grid-template-columns:1fr;}
     .id-card{align-items:center;text-align:center;}
     .avatar-row{flex-direction:column;}
     .meta-row,.btn-row{justify-content:center;}
@@ -279,47 +285,43 @@
   </div>
 </section>
 
+<!-- ادغام درباره من + مهارت‌ها -->
 <section id="about" class="section">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="section-tag">01 / about</span>
-      <span class="section-title">درباره من</span>
+      <span class="section-title">درباره من و مهارت‌ها</span>
     </div>
     <div class="divider"></div>
-    <p class="about-text reveal">
-      من امیرم، 16 ساله و عاشق کدنویسی. از حدود 2 سال پیش شروع کردم به ساخت <strong>ربات‌های تلگرامی</strong> و کم‌کم وارد دنیای وب شدم.
-      بیشتر روی ربات‌های تلگرام تمرکز دارم و سایت‌های ساده اما کاربردی هم می‌سازم.
-      چیزایی که بلدم بیشتر از تجربه عملی و آزمون‌وخطا یاد گرفتم تا کلاس و مدرسه.
-      دوست دارم پروژه‌هایی بسازم که به کار مردم بیاد و بتونم توش خلاقیت داشته باشم.
-    </p>
+    <div class="about-grid reveal">
+      <div>
+        <p class="about-text">
+          من امیرم، 16 ساله و عاشق کدنویسی. از حدود 2 سال پیش شروع کردم به ساخت <strong>ربات‌های تلگرامی</strong> و کم‌کم وارد دنیای وب شدم.
+          بیشتر روی ربات‌های تلگرام تمرکز دارم و سایت‌های ساده اما کاربردی هم می‌سازم.
+          چیزایی که بلدم بیشتر از تجربه عملی و آزمون‌وخطا یاد گرفتم تا کلاس و مدرسه.
+          دوست دارم پروژه‌هایی بسازم که به کار مردم بیاد و بتونم توش خلاقیت داشته باشم.
+        </p>
+      </div>
+      <div class="stack-grid">
+        <span class="stack-chip"><span class="p">#</span>telegram-bot</span>
+        <span class="stack-chip"><span class="p">#</span>python</span>
+        <span class="stack-chip"><span class="p">#</span>node.js</span>
+        <span class="stack-chip"><span class="p">#</span>html/css</span>
+        <span class="stack-chip"><span class="p">#</span>api</span>
+        <span class="stack-chip"><span class="p">#</span>automation</span>
+        <span class="stack-chip"><span class="p">#</span>server-basics</span>
+        <span class="stack-chip"><span class="p">#</span>base-security</span>
+      </div>
+    </div>
+    <p style="font-size:.72rem;color:var(--muted-dim);margin-top:6px;">* با کمک ai</p>
   </div>
 </section>
 
 <section class="section" style="padding-top:0;">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="section-tag">02 / stack</span>
-      <span class="section-title">چیزایی که بلدم ( با کمک ai )</span>
-    </div>
-    <div class="divider"></div>
-    <div class="stack-grid reveal">
-      <span class="stack-chip"><span class="p">#</span>telegram-bot</span>
-      <span class="stack-chip"><span class="p">#</span>python</span>
-      <span class="stack-chip"><span class="p">#</span>node.js</span>
-      <span class="stack-chip"><span class="p">#</span>html/css</span>
-      <span class="stack-chip"><span class="p">#</span>api</span>
-      <span class="stack-chip"><span class="p">#</span>automation</span>
-      <span class="stack-chip"><span class="p">#</span>server-basics</span>
-      <span class="stack-chip"><span class="p">#</span>base-security</span>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="section-tag">03 / work</span>
-      <span class="section-title">کارهایی که انجام می‌دم ( با کمک ai )</span>
+      <span class="section-tag">02 / work</span>
+      <span class="section-title">کارهایی که انجام می‌دم</span>
     </div>
     <div class="divider"></div>
     <div class="card-grid reveal">
@@ -345,7 +347,7 @@
 <section id="contact" class="section" style="padding-top:0;">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="section-tag">04 / contact</span>
+      <span class="section-tag">03 / contact</span>
       <span class="section-title">راه‌های ارتباطی</span>
     </div>
     <div class="divider"></div>
@@ -370,15 +372,14 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="cta reveal">
-      <h3>یه ایده داری؟</h3>
-      <p>اگه فکر می‌کنی می‌تونم کمکت کنم، خوشحال می‌شم بشنومش. از طریق تلگرام پیام بده.</p>
-      <a href="https://t.me/IAmiro" target="_blank" class="btn btn-primary"><i class="fab fa-telegram"></i> بزن بریم</a>
-    </div>
+<!-- CTA کوچک‌تر در انتها -->
+<div class="wrap">
+  <div class="cta-footer reveal">
+    <h3>یه ایده داری؟</h3>
+    <p>اگه فکر می‌کنی می‌تونم کمکت کنم، خوشحال می‌شم بشنومش. از طریق تلگرام پیام بده.</p>
+    <a href="https://t.me/IAmiro" target="_blank" class="btn btn-primary"><i class="fab fa-telegram"></i> بزن بریم</a>
   </div>
-</section>
+</div>
 
 <div class="footer">
   <div>Made with ❤️</div>
