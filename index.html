@@ -1,460 +1,396 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Page Title -->
-    <title>امیرمحمد یوسفی | Developer</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>امیرمحمد یوسفی | Developer</title>
 
-    <!-- OG — Social Share -->
-    <title>امیرمحمد یوسفی | Developer</title>  <!-- OG — Social Share -->  
-    <meta property="og:site_name" content="امیرمحمد یوسفی | Developer">  
-    <meta property="og:type" content="website">  
-    <meta property="og:url" content="https://amirmohammadyousefi.netlify.app">  
-    <meta property="og:title" content="امیرمحمد یوسفی | Developer">  
-    <meta property="og:image" content="https://raw.githubusercontent.com/AmirZzzw/AmirMohammad-Yousefi/main/Profile.png">  
-    <meta property="og:description" content="رزومه امیرمحمد یوسفی، توسعه‌دهنده ربات تلگرام و وب">  
+<meta property="og:site_name" content="امیرمحمد یوسفی | Developer">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amirmohammadyousefi.netlify.app">
+<meta property="og:title" content="امیرمحمد یوسفی | Developer">
+<meta property="og:image" content="https://raw.githubusercontent.com/AmirZzzw/AmirMohammad-Yousefi/main/Profile.png">
+<meta property="og:description" content="رزومه امیرمحمد یوسفی، توسعه‌دهنده ربات تلگرام و وب">
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "امیرمحمد یوسفی | Developer",
-      "alternateName": "امیرمحمد یوسفی",
-      "url": "https://amirmohammadyousefi.netlify.app/",
-      "description": "رزومه امیرمحمد یوسفی، توسعه‌دهنده ربات تلگرام و وب",
-      "publisher": {
-        "@type": "Organization",
-        "name": "امیرمحمد یوسفی",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://raw.githubusercontent.com/AmirZzzw/AmirMohammad-Yousefi/main/Profile.png"
-        }
-      }
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "امیرمحمد یوسفی | Developer",
+  "url": "https://amirmohammadyousefi.netlify.app/",
+  "description": "رزومه امیرمحمد یوسفی، توسعه‌دهنده ربات تلگرام و وب"
+}
+</script>
 
-    <link rel="icon" href="https://raw.githubusercontent.com/AmirZzzw/AmirMohammad-Yousefi/refs/heads/main/Profile.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<link rel="icon" href="https://raw.githubusercontent.com/AmirZzzw/AmirMohammad-Yousefi/refs/heads/main/Profile.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-        body {
-            font-family: 'Vazir', Tahoma, sans-serif;
-            background: #0f1117;
-            color: #d4dcec;
-            line-height: 1.7;
-            padding: 20px;
-        }
+<style>
+  :root{
+    --bg:#070b14;
+    --bg-soft:#0b1120;
+    --surface:#101828;
+    --surface-2:#16213a;
+    --border:#223252;
+    --border-soft:#1a2540;
+    --text:#eaf0fb;
+    --muted:#8493b4;
+    --muted-dim:#5c6a89;
+    --accent:#c9a667;
+    --accent-soft:rgba(201,166,103,.13);
+    --accent-line:rgba(201,166,103,.35);
+    --online:#34d399;
+    --radius-lg:22px;
+    --radius-md:14px;
+    --mono:'JetBrains Mono',ui-monospace,monospace;
+    --sans:'Vazirmatn',Tahoma,sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    background:
+      radial-gradient(circle at 15% -10%, rgba(201,166,103,.08), transparent 45%),
+      radial-gradient(circle at 90% 10%, rgba(52,211,153,.05), transparent 40%),
+      var(--bg);
+    color:var(--text);
+    line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{text-decoration:none;color:inherit;}
+  ::selection{background:var(--accent-soft);color:var(--accent);}
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #181b24;
-            border-radius: 28px;
-            padding: 40px 35px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
-            border: 1px solid #2a2d38;
-        }
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px;}
+  .section{padding:64px 0;}
+  .section-head{display:flex;align-items:baseline;gap:14px;margin-bottom:28px;}
+  .section-tag{
+    font-family:var(--mono);
+    direction:ltr;
+    font-size:.72rem;
+    letter-spacing:.14em;
+    color:var(--accent);
+    background:var(--accent-soft);
+    border:1px solid var(--accent-line);
+    padding:4px 10px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  .section-title{font-size:1.35rem;font-weight:700;color:#f5f8ff;}
+  .divider{height:1px;background:linear-gradient(90deg,var(--border-soft),transparent);margin:0 0 8px;}
 
-        /* header */
-        .header {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-bottom: 35px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #282c36;
-        }
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
 
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #3b82f6;
-            flex-shrink: 0;
-        }
+  /* ===== HERO ===== */
+  .hero{position:relative;padding:70px 0 40px;overflow:hidden;border-bottom:1px solid var(--border-soft);}
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:40px;
+    align-items:center;
+  }
+  .id-card{display:flex;flex-direction:column;gap:16px;}
+  .avatar-row{display:flex;align-items:center;gap:16px;}
+  .avatar{
+    width:64px;height:64px;border-radius:16px;object-fit:cover;
+    border:1px solid var(--border);
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+  }
+  .status-pill{
+    display:inline-flex;align-items:center;gap:7px;
+    font-family:var(--mono);direction:ltr;font-size:.72rem;color:var(--online);
+  }
+  .status-dot{width:7px;height:7px;border-radius:50%;background:var(--online);box-shadow:0 0 0 4px rgba(52,211,153,.15);animation:pulse 2.2s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
 
-        .header-info h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #eef3ff;
-            letter-spacing: -0.5px;
-        }
+  .id-card h1{font-size:2.3rem;font-weight:800;color:#fff;margin:0;letter-spacing:-.02em;}
+  .id-card .role{color:var(--muted);font-size:1.05rem;margin-top:2px;}
+  .id-card .lede{color:#c3ccdf;font-size:.98rem;max-width:34rem;margin-top:6px;}
 
-        .header-info .role {
-            font-size: 1.05rem;
-            color: #8aa3d9;
-            margin: 2px 0 6px;
-        }
+  .meta-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px;font-family:var(--mono);direction:ltr;}
+  .meta-row span{
+    font-size:.78rem;color:var(--muted);
+    border:1px solid var(--border-soft);
+    padding:4px 10px;border-radius:999px;
+    display:inline-flex;align-items:center;gap:6px;
+  }
+  .meta-row i{color:var(--accent);}
 
-        .header-info .meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px 18px;
-            font-size: 0.85rem;
-            color: #8895b0;
-        }
+  .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 22px;border-radius:12px;
+    font-family:var(--sans);font-size:.92rem;font-weight:600;
+    border:1px solid transparent;cursor:pointer;transition:.2s ease;
+  }
+  .btn-primary{background:var(--accent);color:#1a1305;}
+  .btn-primary:hover{background:#dab77a;transform:translateY(-2px);}
+  .btn-ghost{background:var(--surface);border-color:var(--border);color:var(--text);}
+  .btn-ghost:hover{border-color:var(--accent-line);background:var(--surface-2);}
 
-        .header-info .meta i {
-            color: #5a7bc0;
-            width: 18px;
-        }
+  /* terminal signature */
+  .terminal{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius-lg);
+    box-shadow:0 30px 70px rgba(0,0,0,.55);
+    overflow:hidden;
+  }
+  .terminal-bar{
+    display:flex;align-items:center;gap:8px;
+    padding:12px 16px;
+    background:var(--surface-2);
+    border-bottom:1px solid var(--border-soft);
+  }
+  .dot{width:10px;height:10px;border-radius:50%;}
+  .dot.r{background:#ef4444;} .dot.y{background:#f59e0b;} .dot.g{background:#22c55e;}
+  .terminal-title{
+    font-family:var(--mono);font-size:.72rem;color:var(--muted-dim);
+    margin-inline-start:8px;direction:ltr;
+  }
+  .terminal-body{
+    padding:20px 18px;
+    font-family:var(--mono);
+    font-size:.82rem;
+    direction:ltr;
+    text-align:left;
+    color:#c3ccdf;
+    min-height:190px;
+  }
+  .terminal-body .ln{margin-bottom:9px;opacity:0;animation:typeIn .4s ease forwards;}
+  .terminal-body .prompt{color:var(--accent);}
+  .terminal-body .ok{color:var(--online);}
+  .terminal-body .cursor{
+    display:inline-block;width:7px;height:14px;background:var(--accent);
+    vertical-align:middle;animation:blink 1s step-end infinite;
+  }
+  @keyframes typeIn{to{opacity:1;}}
+  @keyframes blink{50%{opacity:0;}}
 
-        /* buttons */
-        .btn-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 14px;
-        }
+  /* ===== ABOUT ===== */
+  .about-text{color:#c3ccdf;font-size:.98rem;max-width:56rem;}
+  .about-text strong{color:var(--accent);font-weight:600;}
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 20px;
-            border-radius: 40px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            font-family: inherit;
-            border: none;
-            cursor: pointer;
-            transition: 0.2s ease;
-            background: #282d3a;
-            color: #c8d2e8;
-            text-decoration: none;
-        }
+  /* ===== STACK / SKILLS as terminal chips ===== */
+  .stack-grid{display:flex;flex-wrap:wrap;gap:10px;}
+  .stack-chip{
+    font-family:var(--mono);direction:ltr;font-size:.82rem;
+    color:var(--text);
+    background:var(--surface);
+    border:1px solid var(--border);
+    padding:8px 14px;border-radius:9px;
+    transition:.2s ease;
+  }
+  .stack-chip .p{color:var(--accent);margin-inline-end:6px;}
+  .stack-chip:hover{border-color:var(--accent-line);background:var(--surface-2);transform:translateY(-2px);}
 
-        .btn-primary {
-            background: #3b82f6;
-            color: #fff;
-        }
-        .btn-primary:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
+  /* ===== SERVICES ===== */
+  .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;}
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border-soft);
+    border-radius:var(--radius-md);
+    padding:24px 20px;
+    transition:.25s ease;
+  }
+  .card:hover{border-color:var(--accent-line);transform:translateY(-4px);background:var(--surface-2);}
+  .card i{font-size:1.4rem;color:var(--accent);margin-bottom:12px;display:block;}
+  .card h4{margin:0 0 6px;font-size:1rem;font-weight:700;color:#f2f5fc;}
+  .card p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.75;}
 
-        .btn-outline {
-            border: 1px solid #3b4252;
-            background: transparent;
-        }
-        .btn-outline:hover {
-            border-color: #5a7bc0;
-            background: #1f2533;
-        }
+  /* ===== CONTACT ===== */
+  .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+  .contact-link{
+    display:flex;align-items:center;gap:12px;
+    background:var(--surface);border:1px solid var(--border-soft);
+    padding:14px 16px;border-radius:var(--radius-md);
+    color:var(--text);font-size:.9rem;transition:.2s ease;
+  }
+  .contact-link i{font-size:1.1rem;color:var(--accent);width:20px;text-align:center;}
+  .contact-link:hover{border-color:var(--accent-line);background:var(--surface-2);transform:translateY(-2px);}
+  .contact-link .sub{display:block;font-family:var(--mono);direction:ltr;font-size:.72rem;color:var(--muted-dim);margin-top:2px;}
 
-        /* sections */
-        .section {
-            margin-bottom: 32px;
-        }
+  /* ===== CTA ===== */
+  .cta{
+    text-align:center;
+    background:linear-gradient(180deg,var(--surface),var(--bg-soft));
+    border:1px solid var(--border-soft);
+    border-radius:var(--radius-lg);
+    padding:44px 28px;
+  }
+  .cta h3{font-size:1.5rem;color:#fff;margin:0 0 8px;font-weight:800;}
+  .cta p{color:var(--muted);max-width:30rem;margin:0 auto 22px;font-size:.95rem;}
 
-        .section-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #eef3ff;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .section-title i {
-            color: #3b82f6;
-            font-size: 1.1rem;
-        }
+  .footer{text-align:center;padding:30px 0;color:var(--muted-dim);font-size:.8rem;border-top:1px solid var(--border-soft);}
 
-        .section-desc {
-            color: #b0bedb;
-            font-size: 0.95rem;
-            line-height: 1.9;
-        }
-
-        .section-desc strong {
-            color: #b7cbff;
-        }
-
-        /* tags */
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px 12px;
-            margin-top: 6px;
-        }
-
-        .tag {
-            background: #232834;
-            padding: 4px 16px;
-            border-radius: 30px;
-            font-size: 0.8rem;
-            color: #b0c2e5;
-            border: 1px solid #2e3545;
-            transition: 0.2s;
-        }
-        .tag:hover {
-            border-color: #3b82f6;
-            background: #1e2535;
-        }
-
-        /* service cards */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 16px;
-            margin-top: 4px;
-        }
-
-        .card {
-            background: #1e232e;
-            padding: 20px 18px;
-            border-radius: 18px;
-            border: 1px solid #2a2f3d;
-            transition: 0.25s ease;
-        }
-        .card:hover {
-            border-color: #3b82f6;
-            transform: translateY(-4px);
-            background: #212835;
-        }
-
-        .card i {
-            font-size: 1.6rem;
-            color: #5a7bc0;
-            margin-bottom: 6px;
-        }
-        .card h4 {
-            color: #e4ebf7;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-        .card p {
-            color: #9aadce;
-            font-size: 0.85rem;
-            line-height: 1.7;
-            margin-top: 4px;
-        }
-
-        /* social */
-        .social-wrap {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 6px;
-        }
-
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 18px;
-            border-radius: 40px;
-            background: #1e232e;
-            border: 1px solid #2e3545;
-            color: #b0bedb;
-            font-size: 0.85rem;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-        .social-link i {
-            font-size: 1rem;
-        }
-        .social-link:hover {
-            border-color: #3b82f6;
-            background: #1a212f;
-            color: #fff;
-        }
-
-        /* cta */
-        .cta-box {
-            background: #1a1f2b;
-            border-radius: 24px;
-            padding: 30px 28px;
-            text-align: center;
-            border: 1px solid #2a2f3d;
-            margin-top: 8px;
-        }
-        .cta-box h3 {
-            font-size: 1.4rem;
-            color: #eef3ff;
-            font-weight: 600;
-        }
-        .cta-box p {
-            color: #9aadce;
-            font-size: 0.95rem;
-            max-width: 500px;
-            margin: 6px auto 18px;
-        }
-
-        .footer {
-            text-align: center;
-            padding-top: 25px;
-            margin-top: 20px;
-            border-top: 1px solid #282c36;
-            color: #6a7b98;
-            font-size: 0.8rem;
-        }
-
-        /* responsive */
-        @media (max-width: 650px) {
-            .container {
-                padding: 24px 18px;
-            }
-
-            .header {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                gap: 14px;
-            }
-
-            .header-info .meta {
-                justify-content: center;
-            }
-
-            .btn-group {
-                justify-content: center;
-            }
-
-            .card-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .cta-box {
-                padding: 22px 16px;
-            }
-
-            .social-wrap {
-                justify-content: center;
-            }
-
-            .tags {
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 400px) {
-            .avatar {
-                width: 90px;
-                height: 90px;
-            }
-            .header-info h1 {
-                font-size: 1.6rem;
-            }
-            .btn {
-                font-size: 0.8rem;
-                padding: 6px 16px;
-            }
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  @media (max-width:760px){
+    .hero-grid{grid-template-columns:1fr;}
+    .id-card{align-items:center;text-align:center;}
+    .avatar-row{flex-direction:column;}
+    .meta-row,.btn-row{justify-content:center;}
+    .id-card .lede{margin-inline:auto;}
+    .section-head{flex-direction:column;align-items:flex-start;}
+  }
+</style>
 </head>
 <body>
 
-    <div class="container">
-
-        <!-- header -->
-        <div class="header">
-            <img class="avatar" src="https://raw.githubusercontent.com/AmirZzzw/AmirMohammad-Yousefi/refs/heads/main/Profile.png" alt="امیرمحمد یوسفی" />
-            <div class="header-info">
-                <h1>امیرمحمد یوسفی</h1>
-                <div class="role">توسعه‌دهنده ربات تلگرام و وب</div>
-                <div class="meta">
-                    <span><i class="far fa-calendar-alt"></i> 2010/10/10</span>
-                </div>
-                <div class="btn-group">
-                    <a href="#about" class="btn btn-primary"><i class="fas fa-chevron-down"></i> رزومه</a>
-                    <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> ارتباط</a>
-                </div>
-            </div>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="id-card reveal in">
+      <div class="avatar-row">
+        <img class="avatar" src="https://raw.githubusercontent.com/AmirZzzw/AmirMohammad-Yousefi/refs/heads/main/Profile.png" alt="امیرمحمد یوسفی" />
+        <div>
+          <h1>امیرمحمد یوسفی</h1>
+          <div class="role">توسعه‌دهنده ربات تلگرام و وب</div>
         </div>
-
-        <!-- about -->
-        <div id="about" class="section">
-            <div class="section-title"><i class="fas fa-user"></i> درباره من</div>
-            <p class="section-desc">
-                من امیرم ، 16 ساله و عاشق کدنویسی. از حدود 2 سال پیش شروع کردم به ساخت ربات‌های تلگرامی و کم‌کم وارد دنیای وب شدم. 
-                بیشتر روی <strong>ربات‌های تلگرام</strong> تمرکز دارم و سایت‌های ساده اما کاربردی هم می‌سازم. 
-                چیزایی که بلدم بیشتر از تجربه عملی و آزمون خطا یاد گرفتم تا کلاس و مدرسه. 
-                دوست دارم پروژه‌هایی بسازم که به کار مردم بیاد و بتونم توش خلاقیت داشته باشم.
-            </p>
-        </div>
-
-        <!-- skills -->
-        <div class="section">
-            <div class="section-title"><i class="fas fa-code"></i> چیزایی که بلدم ( کمک ai )</div>
-            <div class="tags">
-                <span class="tag">ربات تلگرام</span>
-                <span class="tag">Python</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">HTML / CSS</span>
-                <span class="tag">API</span>
-                <span class="tag">اتوماسیون</span>
-                <span class="tag">مدیریت سرور (مقدماتی)</span>
-                <span class="tag">امنیت پایه</span>
-            </div>
-        </div>
-
-        <!-- services -->
-        <div class="section">
-            <div class="section-title"><i class="fas fa-tools"></i> کارهایی که انجام میدم</div>
-            <div class="card-grid">
-                <div class="card">
-                    <i class="fab fa-telegram"></i>
-                    <h4>ربات تلگرام</h4>
-                    <p>ساخت ربات با قابلیت‌های مدیریت کاربر، پرداخت، ارسال پیام‌های خودکار و اتصال به APIهای مختلف.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-globe"></i>
-                    <h4>سایت ساده و مدرن</h4>
-                    <p>طراحی صفحات شخصی، فروشگاهی یا معرفی برند با ظاهر تمیز و ریسپانسیو.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h4>امنیت پایه</h4>
-                    <p>آشنایی با تهدیدهای رایج، محافظت از ربات در برابر سوءاستفاده و مدیریت امن توکن‌ها.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- contact -->
-        <div id="contact" class="section">
-            <div class="section-title"><i class="fas fa-address-card"></i> راه‌های ارتباطی</div>
-            <div class="social-wrap">
-                <a class="social-link" href="https://instagram.com/ami3rr" target="_blank"><i class="fab fa-instagram"></i> اینستاگرام</a>
-                <a class="social-link" href="https://t.me/IAmiro" target="_blank"><i class="fab fa-telegram"></i> پیام مستقیم</a>
-                <a class="social-link" href="https://t.me/SidkaShop" target="_blank"><i class="fab fa-telegram"></i> کانال SidkaShop</a>
-                <a class="social-link" href="https://github.com/AmirZzzw" target="_blank"><i class="fab fa-github"></i> گیت‌هاب</a>
-            </div>
-        </div>
-
-        <!-- cta -->
-        <div class="cta-box">
-            <h3>یه ایده داری؟</h3>
-            <p>اگه فکر می‌کنی می‌تونم کمکت کنم، خوشحال میشم بشنومش. از طریق تلگرام پیام بده.</p>
-            <a href="https://t.me/IAmiro" target="_blank" class="btn btn-primary"><i class="fab fa-telegram"></i> بزن بریم</a>
-        </div>
-
-        <!-- footer -->
-        <div class="footer">
-            <h3>Made With ❤️</h3>
-            <h3>© 2026 All Rights Reserverd.</h3>
-        </div>
-
+      </div>
+      <p class="lede">می‌سازم چیزهایی که واقعاً استفاده می‌شن؛ از ربات‌های تلگرامی گرفته تا سایت‌های ساده و کاربردی.</p>
+      <div class="status-pill"><span class="status-dot"></span> available for projects</div>
+      <div class="meta-row">
+        <span><i class="far fa-calendar-alt"></i> 2010/10/10</span>
+      </div>
+      <div class="btn-row">
+        <a href="#about" class="btn btn-primary"><i class="fas fa-chevron-down"></i> رزومه</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> ارتباط</a>
+      </div>
     </div>
+
+    <div class="terminal reveal in">
+      <div class="terminal-bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="terminal-title">amir@bot-server:~</span>
+      </div>
+      <div class="terminal-body" id="termBody">
+        <div class="ln" style="animation-delay:.1s"><span class="prompt">$</span> whoami</div>
+        <div class="ln" style="animation-delay:.5s">amirmohammad_yousefi</div>
+        <div class="ln" style="animation-delay:1s">&nbsp;</div>
+        <div class="ln" style="animation-delay:1.3s"><span class="prompt">$</span> ./deploy.sh --target telegram</div>
+        <div class="ln" style="animation-delay:2s">building bot... <span class="ok">done</span></div>
+        <div class="ln" style="animation-delay:2.5s">connecting to API... <span class="ok">ok</span></div>
+        <div class="ln" style="animation-delay:3s">status: <span class="ok">online ✓</span></div>
+        <div class="ln" style="animation-delay:3.4s"><span class="prompt">$</span> <span class="cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-tag">01 / about</span>
+      <span class="section-title">درباره من</span>
+    </div>
+    <div class="divider"></div>
+    <p class="about-text reveal">
+      من امیرم، 16 ساله و عاشق کدنویسی. از حدود 2 سال پیش شروع کردم به ساخت <strong>ربات‌های تلگرامی</strong> و کم‌کم وارد دنیای وب شدم.
+      بیشتر روی ربات‌های تلگرام تمرکز دارم و سایت‌های ساده اما کاربردی هم می‌سازم.
+      چیزایی که بلدم بیشتر از تجربه عملی و آزمون‌وخطا یاد گرفتم تا کلاس و مدرسه.
+      دوست دارم پروژه‌هایی بسازم که به کار مردم بیاد و بتونم توش خلاقیت داشته باشم.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-tag">02 / stack</span>
+      <span class="section-title">چیزایی که بلدم</span>
+    </div>
+    <div class="divider"></div>
+    <div class="stack-grid reveal">
+      <span class="stack-chip"><span class="p">#</span>telegram-bot</span>
+      <span class="stack-chip"><span class="p">#</span>python</span>
+      <span class="stack-chip"><span class="p">#</span>node.js</span>
+      <span class="stack-chip"><span class="p">#</span>html/css</span>
+      <span class="stack-chip"><span class="p">#</span>api</span>
+      <span class="stack-chip"><span class="p">#</span>automation</span>
+      <span class="stack-chip"><span class="p">#</span>server-basics</span>
+      <span class="stack-chip"><span class="p">#</span>base-security</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-tag">03 / work</span>
+      <span class="section-title">کارهایی که انجام می‌دم</span>
+    </div>
+    <div class="divider"></div>
+    <div class="card-grid reveal">
+      <div class="card">
+        <i class="fab fa-telegram"></i>
+        <h4>ربات تلگرام</h4>
+        <p>ساخت ربات با قابلیت‌های مدیریت کاربر، پرداخت، ارسال پیام‌های خودکار و اتصال به APIهای مختلف.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-globe"></i>
+        <h4>سایت ساده و مدرن</h4>
+        <p>طراحی صفحات شخصی، فروشگاهی یا معرفی برند با ظاهر تمیز و ریسپانسیو.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-shield-alt"></i>
+        <h4>امنیت پایه</h4>
+        <p>آشنایی با تهدیدهای رایج، محافظت از ربات در برابر سوءاستفاده و مدیریت امن توکن‌ها.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-tag">04 / contact</span>
+      <span class="section-title">راه‌های ارتباطی</span>
+    </div>
+    <div class="divider"></div>
+    <div class="contact-grid reveal">
+      <a class="contact-link" href="https://instagram.com/ami3rr" target="_blank">
+        <i class="fab fa-instagram"></i>
+        <span>اینستاگرام<span class="sub">@ami3rr</span></span>
+      </a>
+      <a class="contact-link" href="https://t.me/IAmiro" target="_blank">
+        <i class="fab fa-telegram"></i>
+        <span>پیام مستقیم<span class="sub">@IAmiro</span></span>
+      </a>
+      <a class="contact-link" href="https://t.me/SidkaShop" target="_blank">
+        <i class="fab fa-telegram"></i>
+        <span>کانال SidkaShop<span class="sub">@SidkaShop</span></span>
+      </a>
+      <a class="contact-link" href="https://github.com/AmirZzzw" target="_blank">
+        <i class="fab fa-github"></i>
+        <span>گیت‌هاب<span class="sub">@AmirZzzw</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta reveal">
+      <h3>یه ایده داری؟</h3>
+      <p>اگه فکر می‌کنی می‌تونم کمکت کنم، خوشحال می‌شم بشنومش. از طریق تلگرام پیام بده.</p>
+      <a href="https://t.me/IAmiro" target="_blank" class="btn btn-primary"><i class="fab fa-telegram"></i> بزن بریم</a>
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  <div>Made with ❤️</div>
+  <div>© 2026 All rights reserved.</div>
+</div>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 
 </body>
 </html>
